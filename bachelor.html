@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elie & Tia's wedding</title>
+    <link rel="icon" href="images/marriage (1).png" type="image/x-icon">
+    <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
+    <!-- Add Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script> -->
+    <link rel="stylesheet" href="css/styleprogress.css">
+    <link rel="stylesheet" href="css/img.css">
+
+</head>
+<body>
+
+    <div id="preloder">
+		<div class="loader"></div>
+	</div>
+   
+    <div id="b" class="container subname">
+
+
+        
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-4">
+                <p><span class="title">Capture the Moment</span><br>Snap a pic of the groom-to-be!</p>
+                <p>
+                    <span id="photoCount" class="photocount" >0 of 5 Photos</span>      
+                </p>               
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                    <button type="button" id="takePhotoButton" class="transparent-button">Take Photo</button>
+                    <br>
+                    <button type="submit"  id="button" class="transparent-button">Upload</button>
+                </form>
+
+                <p id="message" style="color: #cfb291"></p>
+                <span id="countdown" class="timecount"></span> 
+                <div id="loading-spinner"></div>                
+            </div>
+            <img class="filter" id="preview" alt="preview">
+            <!-- <canvas id="canvas" style="display:none;"></canvas> -->
+        </div>
+    </div>
+
+    <!-- QR Icon -->
+    <div id="qrIcon" class="qr-icon">
+        <img src="images/qr.png" alt="QR Icon" onclick="showQRCode()">
+        <p class="qr-text">Scan & Share</p>
+    </div>
+
+    <!-- QR Code Modal -->
+    <div id="qrModal" class="qr-modal">
+        <span class="close" onclick="hideQRCode()">&times;</span>
+        <img class="qr-modal-content" id="qrImage" src="images/qr-share.png" alt="QR Code">
+
+        <div class=" text-center"  style="position: relative; top: 250px;">
+            <a href="https://weddingdev.click/">
+            <span style="font-size: small; color: white;">Powered by</span>
+            <span><img src="images/logo.jpg" alt="Camera Icon" style="width: 85px; height: 30px; border-radius: 4px;"></span>
+            </a>
+        </div>
+    </div>
+
+
+    
+
+<script src="js/js-backend/cookies.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main1.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/circle-progress.min.js"></script>
+<script src="js/js-backend/img2.js"></script>
+
+
+<style>
+    body{
+        background-image: url('/images/photo/5.jpg') !important;
+    }
+
+
+
+    .qr-icon {
+            position: fixed;
+            bottom: 30px;
+            left: 20px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .qr-icon img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .qr-text {
+            color: #fff;
+            font-size: 7px;
+            margin-top: 5px;
+        }
+
+        .qr-modal {
+            display: none;
+            position: fixed;
+            z-index: 1001;
+            left: 0;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .qr-modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            position: relative;
+            top: 170px;
+            border-radius: 15px;
+        }
+
+        .close {
+            position: absolute;
+            top: 55px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+</style>
+
+<script>
+    function showQRCode() {
+    document.getElementById("qrModal").style.display = "block";
+}
+
+function hideQRCode() {
+    document.getElementById("qrModal").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
+
+
+
