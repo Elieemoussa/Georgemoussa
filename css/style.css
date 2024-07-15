@@ -70,7 +70,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Adjust the opacity to make it softer or darker */
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust the opacity to make it softer or darker */
     pointer-events: none; /* Ensures the overlay doesn't interfere with other elements */
     z-index: 1; /* Ensure the overlay is behind the carousel and other content */
   }
@@ -8354,14 +8354,13 @@ overflow-y: hidden;
       font-size: 2.5rem;
       line-height: 2.25rem;
       font-weight: 550 !important;
-      font-family: 'lora', serif;
-
+      direction: rtl; 
+      font-family: 'areff', serif;
     }
 
 
     .subname{
       font-family: 'Amiri', serif;
-      
       font-style: normal;
       font-size: 1.3rem;
     }
