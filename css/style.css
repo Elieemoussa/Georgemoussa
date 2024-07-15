@@ -8406,6 +8406,23 @@ overflow-y: hidden;
       text-decoration: none;
       /* opacity: 0.5; */
   }
+  .transparent-buttonv1 {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 1.6rem;
+    line-height: 2.25rem;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 3rem;
+    width: 9rem;
+  }
+
+
 
   .blur-background {
     position: absolute;
