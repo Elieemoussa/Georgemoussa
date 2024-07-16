@@ -8406,6 +8406,7 @@ overflow-y: hidden;
       text-decoration: none;
       /* opacity: 0.5; */
   }
+
   .transparent-buttonv1 {
     background-color: transparent;
     color: white;
@@ -8422,6 +8423,12 @@ overflow-y: hidden;
     width: 9rem;
   }
 
+  .transparent-buttonv1:hover {
+    /* background-color: white; */
+    color: gray;
+    text-decoration: none;
+    /* opacity: 0.5; */
+}
 
 
   .blur-background {
