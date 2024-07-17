@@ -8244,6 +8244,11 @@ overflow-y: hidden;
     font-size: 1.4rem;
   } 
 
+ .subname-2{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+ }
+
   .name-container {
     display: inline-block;
     margin: 0 10px;
