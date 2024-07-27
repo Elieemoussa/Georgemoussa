@@ -8228,7 +8228,7 @@ overflow-y: hidden;
     display: flex;
     text-align: center;
     justify-content: space-around;
-    padding: 14px 4px;
+    padding: 14px 0px;
   }
   
   .parents-1 {
