@@ -8228,7 +8228,14 @@ overflow-y: hidden;
     display: flex;
     text-align: center;
     justify-content: space-around;
-    padding: 12px 4px;
+    padding: 14px 4px;
+  }
+  
+  .parents-1 {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0px 100px;
   }
    .subname_1 span{
     display: block;
@@ -8241,7 +8248,7 @@ overflow-y: hidden;
     font-family: 'Amiri', serif;
     font-weight: bold;
     font-style: normal;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   } 
 
  .subname-2{
